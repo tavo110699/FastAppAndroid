@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="11dp"
+        android:elevation="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:riv_corner_radius="5dip"
+                    android:id="@+id/imageProduct"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_foto"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_like"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="6.7dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/favoriteAction" />
+
+            </RelativeLayout>
+
+            <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14.4sp"
+                android:layout_marginTop="11.5dp"
+                android:text="@string/name_product"
+                android:layout_marginStart="12.5dp"
+                android:maxLines="1"
+                android:id="@+id/nameProduct"
+                android:textColor="#262628"/>
+
+            <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/price_product"
+                android:textSize="12sp"
+                android:textColor="#9b9b9b"
+                android:id="@+id/priceProduct"
+                android:layout_marginStart="12.5dp"
+                android:maxLines="1"
+                android:layout_marginTop="6.3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7.8dp"
+                android:layout_marginStart="12.5dp"
+                android:layout_marginBottom="11.dp">
+
+                <RatingBar
+                    android:visibility="gone"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="0.1"
+                    android:progressTint="@android:color/holo_red_dark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:rating="4"/>
+
+                <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ccategory_product"
+                    android:textSize="12sp"
+                    android:layout_marginStart="2.6dp"
+                    android:id="@+id/categoryProduct"
+                    android:textColor="#9b9b9b"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

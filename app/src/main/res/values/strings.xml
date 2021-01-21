@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Fast Delivery</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Correo electronico</string>
+    <string name="enter">ENTRAR</string>
+    <string name="fast_delivery_login">Fast Delivery</string>
+    <string name="app">App</string>
+    <string name="password_reset">¿Olvidaste tu contraseña?</string>
+    <string name="new_account">¿No tienes cuenta? Crear una</string>
+    <string name="categories">Categorias</string>
+    <string name="client_defaultt_item">Cliente: Fulano de Tal</string>
+    <string name="direction_item">Direccion: Horoico Colegio militar 92122</string>
+    <string name="total_item">Total: $500 MXN</string>
+    <string name="status">Estado del pedido</string>
+
+    <string name="default_notification_channel_id">fastappnotification</string>
+    <string name="add_product_title">Agregar productos - Fast</string>
+    <string name="add_ingredients_title">Agregar ingredientes - Fast</string>
+    <string name="name_ingredient">Nombre del ingrediente</string>
+    <string name="price_ingredient">Precio del ingrediente</string>
+    <string name="settings">Ajustes</string>
+    <string name="my_products">Mis productos</string>
+    <string name="my_ingredients">Mis ingredientes</string>
+    <string name="my_ingredients_title">Mis Ingredientes - Fast</string>
+    <string name="my_products_title">Mis Productos - Fast</string>
+    <string name="complete_all_inputs">\"Debes llenar todos los campos \"</string>
+    <string name="name_product">Nombre del producto</string>
+    <string name="description_product">Descripción del producto</string>
+    <string name="price_product">Precio del producto</string>
+    <string name="ccategory_product">Categoria del producto</string>
+    <string name="add_product">Agregar producto</string>
+    <string name="update_product">Actualizar producto</string>
+    <string name="title_activity_new_home">NewHomeActivity</string>
+    <string name="name_user">Nombre del usuario</string>
+    <string name="categoria_y_partner">Categoria y Partner</string>
+    <string name="description">DESCRIPCION E INGREDIENTES</string>
+    <string name="mod_ingredints">Modificar ingredientes</string>
+    <string name="add_alter_product">Puedes quitar/añadir ingredientes</string>
+    <string name="alter">Modificar</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id.Morbi tristique senectus et netus et.</string>
+    <string name="add_to_my_shoppingcart">Agregar a mi cesta</string>
+    <string name="size_shoppingcart">Número de piezas a ordenar</string>
+
+
+    <string name="time_ago_now">Hace unos momentos</string>
+    <string name="time_ago_full_seconds">Hace %1$d segundo(s)</string>
+    <string name="time_ago_full_minute">Hace %1$d minuto</string>
+    <string name="time_ago_full_minutes">Hace %1$d minutos</string>
+    <string name="time_ago_full_hour">Hace %1$d hora</string>
+    <string name="time_ago_full_hours">Hace %1$d horas</string>
+    <string name="time_ago_full_yesterday_at">Ayer a las %1$s</string>
+    <string name="time_ago_full_days">Hace %1$d días</string>
+    <string name="time_ago_full_month">Hace %1$d mes</string>
+    <string name="time_ago_full_months">Hace %1$d meses</string>
+
+    <string name="time_ago_seconds"> Hace %1$d segundo(s)</string>
+    <string name="time_ago_minute">Hace %1$d minuto</string>
+    <string name="time_ago_minutes">Hace %1$d minutos</string>
+    <string name="time_ago_hour">Hace %1$d hora</string>
+    <string name="time_ago_hours">Hace %1$d horas</string>
+    <string name="time_ago_yesterday_at">Ayer a las %1$s</string>
+    <string name="time_ago_days">Hace %1$d dia</string>
+    <string name="time_ago_month">Hace %1$d mes</string>
+    <string name="time_ago_months">Hace %1$d meses</string>
+    <string name="makee_pedido">Realizar pedido</string>
+    <string name="size_products_dialog">Cantidad de productos: </string>
+    <string name="image_arrow">IMAGE ARROW</string>
+    <string name="image_icon">IMAGE ICON</string>
+    <string name="add_ingredients">AGREGAR</string>
+    <string name="size_n">Pieza n</string>
+    <string name="details_product_dialog">Detalles del producto</string>
+    <string name="number_products">Número de productos:</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="final_price">Costo total:</string>
+    <string name="edit">Editar</string>
+    <string name="street_colony">Calle y colonia</string>
+    <string name="state_country">Estado y pais</string>
+    <string name="number_exterior">Numero exterior</string>
+    <string name="cp">Codigo postal</string>
+
+    <string name="request_cancelled">Cancelar</string>
+    <string name="loading">Cargando</string>
+
+    <string name="MAP_VIEW_BUNDLE_KEY">AIzaSyABIv2NOzukAb2nLuK0MhFZlIBaO0eWU7k</string>
+    <string name="desc_permission">Places Project necesita permiso para acceder a la ubicación del dispositivo para proporcionar los servicios requeridos. Por favor permita el permiso</string>
+    <string name="location_order">¿Entregamos tu orden aquí?</string>
+    <string name="validate_direction">Validar dirección</string>
+    <string name="street">Calle</string>
+    <string name="number_interior">Número interior</string>
+    <string name="references">Referencias y/o entre calles</string>
+    <string name="colony">Colonia</string>
+    <string name="city">Ciudad</string>
+    <string name="state">Estado</string>
+    <string name="add_direction">Agregar dirección</string>
+    <string name="order_details">Detalles de la orden</string>
+    <string name="select_direction">Selecciona una dirección</string>
+    <string name="content_order">Contenido de la orden</string>
+    <string name="name_client">Nombre del cliente</string>
+    <string name="direction_client">dirección del cliente</string>
+    <string name="precio_total">Precio total</string>
+    <string name="change_status">Cambiar estado</string>
+    <string name="send_info">Enviar información</string>
+    <string name="assign_order">Repartidor de Fast</string>
+    <string name="order_status">Estado de la orden</string>
+    <string name="order_status_text">Estado actual de la orden:</string>
+    <string name="notification_title">Titulo de la notificacion</string>
+    <string name="notification_content">Contenido de la notificacion</string>
+    <string name="time_ago">20 mins</string>
+    <string name="name">Nombre</string>
+    <string name="last_name_p">Apellido paterno</string>
+    <string name="last_namem">Apellido materno</string>
+    <string name="numberphone">Número de telefono</string>
+    <string name="update_info">ACTUALIZAR INFORMACIÓN</string>
+    <string name="already_account">¿Ya tienes cuenta? Entrar</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="message_verify_phone_number">Códigos de verificación OTP</string>
+    <string name="instructions_verify_phone">Se ha enviado un código de verificación a: </string>
+    <string name="default_code">123456</string>
+    <string name="delete">Eliminar</string>
+    <string name="ok">LISTO</string>
+    <string name="get_driver_dialog">¿Tu transporte irá por ti a esta dirección?</string>
+    <string name="hello_username">Hola, username</string>
+    <string name="finish_location">¿A dónde vas?</string>
+    <string name="location_init">El transporte irá por ti a</string>
+    <string name="you_location">Tu ubicación</string>
+    <string name="get_transp">Pedir transporte</string>
+
+    <string name="notification_text">Siguiendo, toque para cancelar</string>
+    <string name="transport_id" translatable="false">123</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">default_user_driver@gmail.com</string>
+    <string name="firebase_password" translatable="false">passwordDefaultUserDriver</string>
+    <string name="name_driver">Nombre del conductor</string>
+    <string name="model">Modelo de la unidad y número</string>
+    <string name="placas">Placas y Número de celular</string>
+    <string name="search_another_driver">Buscar otra unidad</string>
+    <string name="confirm_driver">Confirmar viaje</string>
+    <string name="starts">0/0</string>
+    <string name="mark_finished">Marcar como terminado</string>
+    <string name="accept">Aceptar</string>
+    <string name="refusee">Rechazar</string>
+    <string name="refuse_ride">Rechazar viaje</string>
+    <string name="accept_ride">Aceptar viaje</string>
+    <string name="login_start">INICIAR SESION</string>
+    <string name="message_start">Realiza pedidos de tu producto favoritos, ó solicita transporte desde de la app</string>
+    <string name="hello">Hola,</string>
+    <string name="create_new_account">Crear cuenta</string>
+    <string name="skip">Saltar</string>
+    <string name="next">Siguiente</string>
+    <string name="get_started">Empezar</string>
+    <string name="all">TODO</string>
+    <string name="default_number">(+52)5518120541</string>
+    <string name="notify_client_arrive_driver">Notificar al cliente, que llegaste por el</string>
+
+
+</resources>

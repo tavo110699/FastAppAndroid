@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"
+        android:src="@drawable/back" />
+
+    <lunainc.com.mx.fastdelivery.customfonts.TextView_Helvetica_Neue_bold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Promocion"
+        android:id="@+id/namePromo"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="-75dp"/>
+
+    <lunainc.com.mx.fastdelivery.customfonts.TextView_Helvetica_Neue_bold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Descripcion..."
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="7dp"
+        android:id="@+id/descPromo"
+        android:layout_marginTop="-45dp"/>
+
+
+
+
+
+</LinearLayout>

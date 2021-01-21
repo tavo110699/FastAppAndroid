@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "249327776184",
+    "firebase_url": "https://fastapp-5282f.firebaseio.com",
+    "project_id": "fastapp-5282f",
+    "storage_bucket": "fastapp-5282f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249327776184:android:d9a724379391a262f8df4d",
+        "android_client_info": {
+          "package_name": "lunainc.com.mx.fastdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249327776184-tgturv00h9ufq0jctm1ep199o135356b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lunainc.com.mx.fastdelivery",
+            "certificate_hash": "d7579c63ff1e2eab6bb78be8f9d76bb31741a274"
+          }
+        },
+        {
+          "client_id": "249327776184-qd4emmqtc8jb97ijq4jcr989ppg5fbqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxC6cc3f1dB8XqYWyzkHbsxkgcfqyn5og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249327776184-qd4emmqtc8jb97ijq4jcr989ppg5fbqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

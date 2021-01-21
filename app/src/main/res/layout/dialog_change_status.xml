@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/orderStatus"
+            android:textColor="@color/black"
+            android:text="@string/order_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <com.tiper.MaterialSpinner
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/SpinnerLayoutStyle"
+            app:boxBackgroundMode="filled"
+            app:counterTextColor="@color/black"
+            app:hintEnabled="true"
+            android:focusable="false"
+            android:textSize="14sp"
+            android:hint="@string/order_status"
+            android:spinnerMode="dropdown"
+            app:spinnerMode="bottomsheet"
+            android:id="@+id/spinner"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/containerInputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/containerImage"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_height="180dp">
+
+                            <ImageView
+                                android:id="@+id/previewImage"
+                                app:srcCompat="@drawable/ic_foto"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"/>
+
+
+
+                        </LinearLayout>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnActionImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_camara"
+                            android:elevation="10dp"
+                            android:layout_marginEnd="55dp"
+                            android:layout_marginTop="-25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@id/containerImage"
+                            style="@style/FloatingActionButtonCreate"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="@string/name_product"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="100"
+                        >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/nameProduct"
+                            android:layout_height="55dp"
+                            android:inputType="text"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="@string/description_product"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="150"
+                        >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/descriptionProduct"
+                            android:layout_height="55dp"
+                            android:inputType="text"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="@string/price_product"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="6"
+                        >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/priceProduct"
+                            android:layout_height="55dp"
+                            android:inputType="numberDecimal"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.tiper.MaterialSpinner
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        style="@style/SpinnerLayoutStyle"
+                        app:boxBackgroundMode="filled"
+                        app:counterTextColor="@color/black"
+                        app:hintEnabled="true"
+                        android:hint="@string/ccategory_product"
+                        android:spinnerMode="dropdown"
+                        app:spinnerMode="bottomsheet"
+                        android:id="@+id/spinnerType"/>
+
+
+                    <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                        android:layout_marginLeft="20dp"
+                        style="@style/SpinnerLayoutStyle"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/spinnerIngredients"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        app:hintText="Ingredientes del producto" />
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/actionBtn"
+                    style="@style/FloatingActionButton"
+                    app:iconTint="@color/white"
+                    android:layout_below="@id/containerInputs"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add_product"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="200dp"
+                    app:icon="@drawable/ic_check_white_24dp"
+                    android:layout_height="50dp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

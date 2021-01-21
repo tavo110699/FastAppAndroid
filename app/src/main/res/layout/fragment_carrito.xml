@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:id="@+id/containerEmptyShoppingCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:src="@drawable/ic_empty_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:text="No tienes productos en tu cesta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/recyclerView"
+                android:paddingTop="11dp"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_demo_child_count="10"
+                app:shimmer_demo_grid_child_count="1"
+                app:shimmer_demo_layout="@layout/grid"
+                app:shimmer_demo_layout_manager_type="linear_vertical"
+                app:shimmer_demo_angle="20"
+                tools:ignore="RtlSymmetry" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:text="@string/makee_pedido"
+        app:icon="@drawable/ic_send"
+        android:layout_margin="20dp"
+        android:id="@+id/buttonAdd"
+        android:background="@color/colorPrimary"
+        style="@style/ButonAdd"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11.7dp"
+        app:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:scaleType="fitXY"
+                android:id="@+id/img1"
+                android:src="@drawable/background"/>
+
+            <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Wild Honey at Scotts Square"
+                android:textSize="14dp"
+                android:paddingLeft="12.5dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/name" />
+
+            <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="473 Keeling Station"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="12.5dp"
+                android:id="@+id/negocio"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="13.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6.7dp"
+                android:paddingLeft="12.5dp">
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="0.1"
+                    android:progressTint="#f15421"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:id="@+id/rating"
+                    android:rating="4"/>
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:paddingRight="8dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$25.00 MXN"
+                    android:layout_marginLeft="8.6dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/price"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</ScrollView>

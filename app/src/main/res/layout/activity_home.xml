@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+
+
+        />
+
+
+
+
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--
+
+       <com.roughike.bottombar.BottomBar
+           android:id="@+id/bottomBar"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           app:bb_behavior="iconsOnly"
+           android:layout_alignParentBottom="true"
+           android:paddingTop="4dp"
+           android:backgroundTint="@null"
+           app:bb_inActiveTabColor="@null"
+           android:foregroundTint="@null"
+           android:backgroundTintMode="@null"
+           app:bb_tabXmlResource="@xml/bottombar" />
+
+
+
+
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:id="@+id/bottomBar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:layout_alignParentBottom="true"
+           app:menu="@menu/bottom_menu"
+           app:labelVisibilityMode="unlabeled" />
+
+       -->
+
+
+
+</RelativeLayout>

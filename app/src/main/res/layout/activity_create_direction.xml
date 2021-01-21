@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            >
+
+          <LinearLayout
+              android:id="@+id/firstContainer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_marginTop="15dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:hint="@string/street"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  android:layout_width="match_parent"
+                  style="@style/TextInputLayoutStyle"
+                  android:layout_height="wrap_content"
+                  app:counterEnabled="true"
+                  app:counterMaxLength="100"
+                  >
+
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:layout_width="match_parent"
+                      android:id="@+id/streetDirection"
+                      android:layout_height="55dp"
+                      android:inputType="text"/>
+
+
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:orientation="horizontal">
+
+
+
+                  <com.google.android.material.textfield.TextInputLayout
+                      android:layout_margin="5dp"
+                      android:hint="@string/number_exterior"
+                      android:textColorHint="@color/black"
+                      android:textColor="@color/black"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      style="@style/TextInputLayoutStyle"
+                      android:layout_height="wrap_content"
+                      app:counterEnabled="true"
+                      app:counterMaxLength="10"
+                      >
+
+
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:id="@+id/numberExteriorDirection"
+                          android:layout_height="55dp"
+                          android:inputType="text"/>
+
+
+                  </com.google.android.material.textfield.TextInputLayout>
+
+
+                  <com.google.android.material.textfield.TextInputLayout
+                      android:layout_margin="5dp"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:hint="@string/number_interior"
+                      android:textColorHint="@color/black"
+                      android:textColor="@color/black"
+                      style="@style/TextInputLayoutStyle"
+                      android:layout_height="wrap_content"
+                      app:counterEnabled="true"
+                      app:counterMaxLength="10"
+                      >
+
+
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:id="@+id/numberInteriorDirection"
+                          android:layout_height="55dp"
+                          android:inputType="text"/>
+
+
+                  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+              </LinearLayout>
+
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:hint="@string/references"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  android:layout_width="match_parent"
+                  style="@style/TextInputLayoutStyle"
+                  android:layout_height="wrap_content"
+                  app:counterEnabled="true"
+                  app:counterMaxLength="255"
+                  >
+
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:layout_width="match_parent"
+                      android:id="@+id/referencesDirection"
+                      android:layout_height="55dp"
+                      android:inputType="text"/>
+
+
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:hint="@string/cp"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  android:layout_width="match_parent"
+                  style="@style/TextInputLayoutStyle"
+                  android:layout_height="wrap_content"
+                  app:counterEnabled="true"
+                  app:counterMaxLength="6"
+                  >
+
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:layout_width="match_parent"
+                      android:id="@+id/cpDirection"
+                      android:layout_height="55dp"
+                      android:inputType="text"/>
+
+
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:hint="@string/colony"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  android:layout_width="match_parent"
+                  style="@style/TextInputLayoutStyle"
+                  android:layout_height="wrap_content"
+                  app:counterEnabled="true"
+                  app:counterMaxLength="60"
+                  >
+
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:layout_width="match_parent"
+                      android:id="@+id/colonyDirection"
+                      android:layout_height="55dp"
+                      android:inputType="text"/>
+
+
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+          </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="50dp"
+                android:layout_below="@id/firstContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:hint="@string/city"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/cityDirection"
+                        android:layout_height="55dp"
+                        android:inputType="text"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:hint="@string/state"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/stateDirection"
+                        android:layout_height="55dp"
+                        android:inputType="text"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+         android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        app:tint="@color/white"
+        style="@style/FloatingActionButton"
+        android:text="@string/add_direction"
+        app:icon="@drawable/ic_check_white_24dp"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"/>
+
+
+
+
+
+
+
+</RelativeLayout>

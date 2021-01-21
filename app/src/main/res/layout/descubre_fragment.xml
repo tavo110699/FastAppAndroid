@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+
+          <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                  android:id="@+id/refreh"
+                  android:layout_below="@id/app_bar"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+
+                      <lunainc.com.mx.fastdelivery.customfonts.MyTextView_Montserrat_Regular
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/categories"
+                          android:textStyle="bold"
+                          android:textSize="20sp"
+                          android:padding="15dp"
+                          android:textColor="#646262"
+                          android:id="@+id/titleDescubre"/>
+
+
+
+
+                      <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                          android:id="@+id/recyclerView"
+                          android:paddingTop="11dp"
+                          android:paddingStart="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          app:shimmer_demo_child_count="10"
+                          app:shimmer_demo_grid_child_count="2"
+                          app:shimmer_demo_layout="@layout/grid"
+                          app:shimmer_demo_layout_manager_type="grid"
+                          app:shimmer_demo_angle="20"
+                          tools:ignore="RtlSymmetry" />
+
+
+
+
+
+                  </LinearLayout>
+
+
+
+
+
+
+              </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Fast"
+            app:titleTextColor="@android:color/white" />
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_leftActionMode="showSearch"
+            app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+            app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+            app:floatingSearch_searchHint="Buscar..."
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_suggestionsListAnimDuration="250">
+
+        </com.arlib.floatingsearchview.FloatingSearchView>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

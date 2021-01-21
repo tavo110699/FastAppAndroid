@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="type_to_search">Type to Search</string>
+    <string name="not_found">No encontrado</string>
+    <string name="ingredients_product">Ingredientes del producto</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/status"
+        android:title="@string/change_status"
+        android:icon="@drawable/ic_products"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/send_info"
+        android:icon="@drawable/ic_ingredient"/>
+
+    <item
+        android:id="@+id/assign"
+        android:title="@string/assign_order"
+        android:icon="@drawable/ic_ingredient"/>
+
+</menu>

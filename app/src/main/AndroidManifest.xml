@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lunainc.com.mx.fastdelivery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Utils.FastDelivery"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator"
+        tools:targetApi="n">
+        <activity android:name=".UI.Activity.Login.StartActivity"
+            android:theme="@style/ThemeMaterial">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Utils.TrackerService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedService" />
+
+        <activity
+            android:name=".UI.Activity.Client.DriverOrderClient"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Conductor.DriverHomeActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Client.AccountClientActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Client.ShowListSearchResultActivity" />
+        <activity android:name=".UI.Activity.Client.DetailOrderClientActivity" />
+        <activity
+            android:name=".UI.Activity.Client.HistorialClientActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Socio.DetailOrderActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Client.PermissionsActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Client.Directions.GetCurrentLocationActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Client.Directions.CreateDirectionActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Client.Directions.DirectionsActivity" />
+        <activity android:name=".UI.Activity.Client.FavoritesActivity" />
+        <activity
+            android:name=".UI.Activity.Client.ProductDetailActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Client.ShowListProductsActivity" />
+        <activity android:name=".UI.Activity.Socio.SettingsPartnerActivity" />
+        <activity android:name=".UI.Activity.Socio.Product.EditProductParnetActivity" />
+        <activity android:name=".UI.Activity.Socio.Product.ProductsPartnerActivity" />
+        <activity android:name=".UI.Activity.Socio.Ingredients.IngredientsPartnerActivity" />
+        <activity
+            android:name=".UI.Activity.Socio.Ingredients.CreateIngredientsActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity
+            android:name=".UI.Activity.Socio.Product.CreateProductActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Socio.HomePartnerActivity">
+            <intent-filter>
+                <action android:name="lunainc.com.mx.fastdelivery_TARGET_NOTIFICATION_PARTNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Activity.Login.RegisterActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Login.VerifyPhoneActivity"
+            android:theme="@style/ThemeMaterial" />
+        <activity android:name=".UI.Activity.Login.LoginActivity"
+            android:theme="@style/ThemeMaterial" />
+
+        <service android:name=".Utils.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/MAP_VIEW_BUNDLE_KEY" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name=".UI.Activity.Client.HomeActivity"
+            android:theme="@style/ThemeMaterial">
+            <intent-filter>
+                <action android:name="lunainc.com.mx.fastdelivery_TARGET_NOTIFICATION_CLIENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

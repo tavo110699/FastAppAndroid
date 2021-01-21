@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="185dp"
+    android:layout_height="160dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="11dp"
+        app:cardCornerRadius="18dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_descubre_img"/>
+        <lunainc.com.mx.fastdelivery.customfonts.TextView_Helvetica_Neue_bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Pizza"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

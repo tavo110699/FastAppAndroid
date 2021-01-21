@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_detail_order_final"
+                android:layout_height="170dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/default_border" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/order_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/num"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="@string/number_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="@string/final_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+            <com.tiper.MaterialSpinner
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/SpinnerLayoutStyle"
+                app:boxBackgroundMode="filled"
+                app:counterTextColor="@color/black"
+                app:hintEnabled="true"
+                android:hint="@string/select_direction"
+                android:spinnerMode="dropdown"
+                app:spinnerMode="bottomsheet"
+                android:id="@+id/spinner"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btnAdd"
+            style="@style/ButonCreateGroup"
+            android:text="@string/add"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+
+            android:id="@+id/btnCancel"
+            style="@style/ButonClose"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

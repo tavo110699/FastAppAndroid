@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:showIn="@layout/activity_driver_home">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="gone"
+        android:id="@+id/containerInfoClient"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/containerDataDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageClient"
+                    android:src="@drawable/avatar_default"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/containerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:textSize="16sp"
+                            android:paddingTop="10dp"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="@string/name_client"
+                            android:id="@+id/nameClient"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:textSize="12sp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/blue_black_dark"
+                            android:text="@string/direction_client"
+                            android:id="@+id/direction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="RtlSymmetry" />
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonActionsOrderDriver"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:text="@string/refuse_ride"
+                    android:id="@+id/rejectClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"/>
+
+                <Button
+                    style="@style/ButtonActionsOrderDriver"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="14sp"
+                    android:text="@string/accept_ride"
+                    android:id="@+id/acceptClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/actionArrived"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonActionsOrderDriver"
+                    android:padding="10dp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_margin="12dp"
+                    android:textSize="14sp"
+                    android:text="@string/notify_client_arrive_driver"
+                    android:id="@+id/driverArrive"
+                    android:layout_width="wrap_content"
+                    android:minHeight="55dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/actionFinish"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonActionsOrderDriver"
+                    android:padding="10dp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_margin="12dp"
+                    android:textSize="14sp"
+                    android:text="@string/mark_finished"
+                    android:id="@+id/finishRide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</RelativeLayout>

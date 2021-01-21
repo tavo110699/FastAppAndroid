@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tab
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_taxi"
+        android:tint="@null"
+        android:title="Page1"
+        />
+    <tab
+        android:id="@+id/explore"
+        android:enabled="true"
+        android:title="Page2"
+        android:icon="@drawable/ic_products"
+        />
+
+
+
+    <tab
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_carrito"
+        android:title="Page3"
+        />
+
+
+    <tab
+        android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="Page4"
+        />
+
+
+    <tab
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="Page5"
+        />
+</tabs>

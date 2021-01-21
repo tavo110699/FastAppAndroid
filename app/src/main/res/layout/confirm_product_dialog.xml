@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_detail_order_icon"
+                android:layout_height="170dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/default_border" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/details_product_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/num"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="@string/number_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="@string/final_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+            <TextView
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_black_dark"
+                android:text="@string/lorem"
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btnAdd"
+                    style="@style/ButonCreateGroup"
+                    android:text="@string/add"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+
+                <Button
+                    android:layout_margin="5dp"
+
+                    android:id="@+id/btnCancel"
+                    style="@style/ButonClose"
+                    android:text="@string/cancel"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fast_logo" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:text="@string/message_verify_phone_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorButtonSecondaryOption" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="@string/instructions_verify_phone"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLogin" />
+
+        <TextView
+            android:id="@+id/numberUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="@string/default_number"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+
+        <com.chaos.view.PinView
+            android:layout_below="@id/textView1"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editTextCode"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:cursorVisible="true"
+            app:cursorColor="@color/colorAccent"
+            app:cursorWidth="2dp"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="5dp"
+            android:hint="@string/default_code"
+            app:itemWidth="40dp"
+            app:lineColor="#2f64ba"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+
+        <Button
+            android:id="@+id/ButtonValidateAccount"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            style="@style/ButtonCreateAccount"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ButtonValidateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="3dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorTextLogin"
+                android:text="¿Aún no recibes el código?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/resendVerificationCodeTime"
+                android:padding="3dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Reeenviar en (60s)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

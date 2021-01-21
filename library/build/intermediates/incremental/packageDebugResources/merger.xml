@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res"/><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/build/generated/res/rs/debug"/><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res"><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values-v21/styles.xml" qualifiers="v21"><style name="MaterialSpinner" parent="Material.Widget.Spinner">
+        <item name="rd_style">@style/Material.Drawable.Ripple.Wave.Light</item>
+        <item name="spn_labelEnable">true</item>
+        <item name="spn_labelTextSize">18sp</item>
+        <item name="spn_arrowSwitchMode">true</item>
+        <item name="spn_arrowAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="spn_arrowInterpolator">@android:anim/decelerate_interpolator</item>
+    </style><style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/myDialogTitle</item>
+    </style><style name="myDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style><style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values-v21/attrs.xml" qualifiers="v21"><declare-styleable name="MultiSpinnerSearch">
+        <attr format="string" name="hintText"/>
+    </declare-styleable></file><file name="default_border" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/drawable/default_border.xml" qualifiers="" type="drawable"/><file name="border_box" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/drawable/border_box.xml" qualifiers="" type="drawable"/><file name="item_listview_multiple" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/layout/item_listview_multiple.xml" qualifiers="" type="layout"/><file name="textview_for_spinner" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/layout/textview_for_spinner.xml" qualifiers="" type="layout"/><file name="item_listview_single" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/layout/item_listview_single.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="alert_dialog_listview_search" path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/layout/alert_dialog_listview_search.xml" qualifiers="" type="layout"/><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values-sw600dp/dimensions_fonts.xml" qualifiers="sw600dp-v13"><dimen name="font_size">22sp</dimen></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values/colors.xml" qualifiers=""><color name="ColorPrimary">#29CA97</color><color name="ColorPrimaryDark">#06ACE4</color><color name="list_background">#06ACE4</color><color name="blue">#1589FF</color><color name="white">#FFFFFF</color><color name="black">#000000</color><color name="gray">#D1D0CE</color><color name="background_color">#E1E2E2</color><color name="primary">#3f51b5</color><color name="primary_pressed">#E1E2E2</color><color name="primary_dark">#303f9f</color><color name="ripple">#F06292</color><color name="red">#FF0000</color><color name="cyan">#00FFFF</color><color name="lightBlue">#ADD8E6</color><color name="text_color">#686868</color><color name="android_text_color">#747474</color><color name="app_topbar_color">#AAAAAA</color><color name="list_even">#AAAAAA</color><color name="list_odd">#E1E2E2</color><color name="list_selected">#455FB6</color><color name="list_header">#99979C</color><color name="stroke_border">#D7D7D7</color></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="margin_basic_25">0.25dp</dimen><dimen name="margin_box">1.5dp</dimen><dimen name="font_size">15sp</dimen></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values/styles.xml" qualifiers=""><style name="MaterialSpinner" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="rd_style">@style/Material.Drawable.Ripple.Wave.Light</item>
+        <item name="spn_labelEnable">true</item>
+        <item name="spn_labelTextSize">18sp</item>
+        <item name="spn_arrowSwitchMode">true</item>
+        <item name="boxStrokeColor">#546DFE</item>
+         <item name="sl_thumbBorderSize">2dp</item>
+        <item name="hintTextColor">#546DFE</item>
+        <item name="android:textSize">6sp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="spn_arrowAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="spn_arrowInterpolator">@android:anim/decelerate_interpolator</item>
+    </style><style name="DialogFragmentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:textColorSecondary">#000</item>
+
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style><style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/myDialogTitle</item>
+    </style><style name="myDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style><style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values/strings.xml" qualifiers=""><string name="type_to_search">Type to Search</string><string name="not_found">No encontrado</string><string name="ingredients_product">Ingredientes del producto</string></file><file path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="MultiSpinnerSearch">
+        <attr format="string" name="hintText"/>
+    </declare-styleable></file></source><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/build/generated/res/rs/debug"/><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/gustavomartinezlicona/FastAppAndroid/library/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MultiSpinnerSearch">
+        <attr format="string" name="hintText"/>
+    </declare-styleable></configuration></mergedItems></merger>
